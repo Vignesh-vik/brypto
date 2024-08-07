@@ -13,7 +13,7 @@ const perks = [
   {
     name: "Security",
     Icon: Shield,
-    Description:"With Our secured and centralized technology, Never woory about fraudulents and scams.",
+    Description:"With Our secured and centralized technology, Never worry about fraudulents and scams.",
   },
   {
     name: "For the Earth",
