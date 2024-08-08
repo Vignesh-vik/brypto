@@ -8,8 +8,16 @@ const NavItems = () => {
   return (
     <div className="flex gap-4 h-full">
       <div className="ml-4 items-center justify-center m-3 flex gap-6">
-        <Link href="https://coinmarketcap.com/" target="_blank" className={buttonVariants({ variant: "secondary" })}>Market &rarr;</Link>
-        <Link href="/Wallet" className={buttonVariants()}>Wallet &rarr;</Link>
+        <Link
+          href="https://coinmarketcap.com/"
+          target="_blank"
+          className={buttonVariants({ variant: "secondary" })}
+        >
+          Market &rarr;
+        </Link>
+        <Link href="/TableTrans" className={buttonVariants()}>
+          Wallet &rarr;
+        </Link>
       </div>
     </div>
   );

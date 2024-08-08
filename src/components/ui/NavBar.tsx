@@ -1,8 +1,9 @@
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
-import NavItems from "./NavItems";
-import { buttonVariants } from "./ui/button";
+import NavItems from "../NavItems";
+import { buttonVariants } from "./button";
+import AccountDash from "./AccountDash";
 
 const NavBar = () => {
   const user = null;
@@ -57,7 +58,7 @@ const NavBar = () => {
                   )}
 
                   <div className="ml-4 flow-root lg:ml-6">
-                    <AccountDash/>
+                    <AccountDash />
                   </div>
                 </div>
               </div>

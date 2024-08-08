@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, Earth, Shield } from "lucide-react";
 import Image from "next/image";
@@ -8,17 +8,20 @@ const perks = [
   {
     name: "Instant Transfer",
     Icon: ArrowDownToLine,
-    Description:"Get your Money transfered to Desired Destination with Zero down time wait.",
+    Description:
+      "Get your Money transfered to Desired Destination with Zero down time wait.",
   },
   {
     name: "Security",
     Icon: Shield,
-    Description:"With Our secured and centralized technology, Never worry about fraudulents and scams.",
+    Description:
+      "With Our secured and centralized technology, Never worry about fraudulents and scams.",
   },
   {
     name: "For the Earth",
     Icon: Earth,
-    Description:"We donate 1% of every transaction fee for the Earth green again.",
+    Description:
+      "We donate 1% of every transaction fee for the Earth green again.",
   },
 ];
 
@@ -60,7 +63,7 @@ export default function Home() {
               >
                 <div className="md:flex-shrink-0 flex justify-center">
                   <div className="h-16 w-16 flex items-center justify-center rounded-full bg-blue-50 text-yellow-700">
-                    {<perk.Icon className="h-1/3 w-1/3"/>}
+                    {<perk.Icon className="h-1/3 w-1/3" />}
                   </div>
                 </div>
                 <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
