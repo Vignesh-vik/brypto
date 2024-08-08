@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
+import TableTrans from "@/components/ui/TableTrans";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, Earth, Shield } from "lucide-react";
 import Image from "next/image";
@@ -77,8 +78,13 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="my-6 flex items-center flex-col gap-y-4">
+        <TableTrans></TableTrans>
+        <Button className="w-full" > Print</Button>
+      </div>
         </MaxWidthWrapper>
       </section>
+
     </>
   );
 }

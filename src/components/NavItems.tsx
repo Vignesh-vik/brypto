@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 const NavItems = () => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
@@ -11,12 +12,12 @@ const NavItems = () => {
         <Link
           href="https://coinmarketcap.com/"
           target="_blank"
-          className={buttonVariants({ variant: "secondary" })}
+          className={cn(buttonVariants({ variant: "secondary" }),"px-8")}
         >
-          Market &rarr;
+          Market
         </Link>
-        <Link href="/TableTrans" className={buttonVariants()}>
-          Wallet &rarr;
+        <Link href="/TableTrans" className={cn(buttonVariants(),"px-8")}>
+          Wallet
         </Link>
       </div>
     </div>

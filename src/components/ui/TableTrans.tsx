@@ -4,7 +4,8 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
-} from "@/components/ui/card";
+} from "./card";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 import {
   Table,
   TableHeader,
@@ -12,7 +13,7 @@ import {
   TableHead,
   TableBody,
   TableCell,
-} from "@/components/ui/table";
+} from "./table";
 
 export default function Component() {
   return (
