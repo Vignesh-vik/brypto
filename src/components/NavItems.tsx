@@ -12,11 +12,14 @@ const NavItems = () => {
         <Link
           href="https://coinmarketcap.com/"
           target="_blank"
-          className={cn(buttonVariants({ variant: "secondary" }),"px-8")}
+          className={cn(buttonVariants({ variant: "ghost" }), "px-8")}
         >
           Market
         </Link>
-        <Link href="/TableTrans" className={cn(buttonVariants(),"px-8")}>
+        <Link
+          href="/Transaction"
+          className={cn(buttonVariants({variant :"ghost"}), "px-8")}
+        >
           Wallet
         </Link>
       </div>

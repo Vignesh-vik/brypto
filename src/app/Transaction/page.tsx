@@ -4,8 +4,7 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
-} from "./card";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+} from "@/components/ui/card";
 import {
   Table,
   TableHeader,
@@ -13,12 +12,15 @@ import {
   TableHead,
   TableBody,
   TableCell,
-} from "./table";
+} from "@/components/ui/table";
+import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
+import { requestFormReset } from "react-dom";
 
 export default function Component() {
   return (
     <>
-      <MaxWidthWrapper>
+      <MaxWidthWrapper className="mt-12">
         <Card className="w-full max-w-4xl mx-auto">
           <CardHeader>
             <CardTitle>Transaction History</CardTitle>
@@ -75,6 +77,10 @@ export default function Component() {
                 </TableRow>
               </TableBody>
             </Table>
+            <div className="w-full mt-2 flex justify-end ">
+
+            <Button className="mx-10 w-40">Print</Button>
+            </div>
           </CardContent>
         </Card>
       </MaxWidthWrapper>
