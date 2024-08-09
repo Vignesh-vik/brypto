@@ -48,7 +48,7 @@ const AccountDash = () => {
             </label>
             <input
               id="username"
-              placeholder="@peduarte"
+              placeholder="0xaweWs6977dSwadwef206sSwd"
               className="col-span-3 py-2"
             />
           </div>
