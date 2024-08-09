@@ -45,7 +45,7 @@ export default function Home() {
               Send Money
             </Link>
             <Link
-              href="/About"
+              href="/about"
               className={buttonVariants({ variant: "ghost" })}
             >
               About us &rarr;
