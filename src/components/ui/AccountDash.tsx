@@ -44,7 +44,7 @@ const AccountDash = () => {
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <label htmlFor="username" className="text-right">
-              Username
+              Ledger
             </label>
             <input
               id="username"
