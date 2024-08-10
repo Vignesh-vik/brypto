@@ -81,15 +81,14 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="mt-4 flex flex-col gap-y-4 ">
-            <Hero></Hero>
-            <Separator />
-            <Tabs></Tabs>
-            <Tabs2></Tabs2>
-          </div>
+          <div className="mt-4 flex flex-col gap-y-4 "></div>
         </MaxWidthWrapper>
       </section>
-
+      <Hero></Hero>
+      <Separator />
+      <Tabs></Tabs>
+      <Tabs2></Tabs2>
+      
     </>
   );
 }
