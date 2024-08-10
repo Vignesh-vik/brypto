@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/ui/NavBar";
+import Hero from "@/components/ui/Hero";
+import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
+import Tabs from "@/components/ui/Tabs";
+import Tabs2 from "@/components/ui/Tabs2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +25,18 @@ export default function RootLayout({
       <body
         className={cn("relative h-full font-sans antialiased", inter.className)}
       >
-        <main className="relative flex flex-col min-h-screen">
+        <main
+          data-scroll
+          data-scroll-speed="0.4"
+          className="relative flex flex-col min-h-screen"
+        >
           <NavBar></NavBar>
           <div className="flex-grow flex-1">{children}</div>
+          <MaxWidthWrapper className="mt-4 flex flex-col gap-y-4">
+            <Hero></Hero>
+            <Tabs></Tabs>
+            <Tabs2></Tabs2>
+          </MaxWidthWrapper>
         </main>
       </body>
     </html>

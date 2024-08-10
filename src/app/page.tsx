@@ -41,7 +41,7 @@ export default function Home() {
             Money from India all over the world.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <Link className={buttonVariants()} href="/MoneyTransfer">
+            <Link className={buttonVariants()} href="/">
               Send Money
             </Link>
             <Link
