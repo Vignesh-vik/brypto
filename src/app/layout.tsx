@@ -7,6 +7,9 @@ import Hero from "@/components/ui/Hero";
 import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
 import Tabs from "@/components/ui/Tabs";
 import Tabs2 from "@/components/ui/Tabs2";
+import Footer from "@/components/ui/Footer";
+import { Separator } from "@/components/ui/separator";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,10 +37,12 @@ export default function RootLayout({
           <div className="flex-grow flex-1">{children}</div>
           <div className="mt-4 flex flex-col gap-y-4 ">
             <Hero></Hero>
+            <Separator />
             <Tabs></Tabs>
             <Tabs2></Tabs2>
           </div>
         </main>
+        <Footer/>
       </body>
     </html>
   );
