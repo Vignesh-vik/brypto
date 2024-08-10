@@ -32,11 +32,11 @@ export default function RootLayout({
         >
           <NavBar></NavBar>
           <div className="flex-grow flex-1">{children}</div>
-          <MaxWidthWrapper className="mt-4 flex flex-col gap-y-4">
+          <div className="mt-4 flex flex-col gap-y-4 ">
             <Hero></Hero>
             <Tabs></Tabs>
             <Tabs2></Tabs2>
-          </MaxWidthWrapper>
+          </div>
         </main>
       </body>
     </html>

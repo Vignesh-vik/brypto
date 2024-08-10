@@ -1,14 +1,10 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/DJVZW1Ofy9V
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+
 import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 
 export default function Component() {
   return (
-    <section className="w-full bg-muted py-12 md:py-16 lg:py-20 rounded-lg">
+    <section className="w-full bg-muted py-12 md:py-16 lg:py-20 rounded-lg px-4">
       <div className="container grid grid-cols-1 sm:grid-cols-3 gap-8 px-4 md:px-6 ">
         <div className="space-y-4">
           <div className="flex items-center justify-center rounded-full bg-primary p-4 text-primary-foreground">
