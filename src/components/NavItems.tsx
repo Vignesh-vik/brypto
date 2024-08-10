@@ -22,6 +22,12 @@ const NavItems = () => {
         >
           Transaction
         </Link>
+        <Link
+          href="/tutorials"
+          className={cn(buttonVariants({variant :"ghost"}), "px-8")}
+        >
+          Tutorials
+        </Link>
       </div>
     </div>
   );

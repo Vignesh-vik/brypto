@@ -1,8 +1,12 @@
+import Hero from "@/components/ui/Hero";
 import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, Earth, Shield } from "lucide-react";
 import Link from "next/link";
-
+import Tabs from "@/components/ui/Tabs";
+import Tabs2 from "@/components/ui/Tabs2";
+import Footer from "@/components/ui/Footer";
+import { Separator } from "@/components/ui/separator";
 
 const perks = [
   {
@@ -76,6 +80,12 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-4 flex flex-col gap-y-4 ">
+            <Hero></Hero>
+            <Separator />
+            <Tabs></Tabs>
+            <Tabs2></Tabs2>
           </div>
         </MaxWidthWrapper>
       </section>
