@@ -1,5 +1,7 @@
 
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import Link from "next/link"
 import { JSX, SVGProps } from "react"
 
 export default function Component() {
@@ -16,9 +18,7 @@ export default function Component() {
             transparent cryptocurrency-based remittance services, empowering individuals and businesses to make global
             payments with ease.
           </p>
-          <Button variant="outline" size="sm">
-            Send Money Now
-          </Button>
+          <Link href="/send" className={ buttonVariants( {variant : "outline"}) }>Send Money</Link>
         </div>
         <div className="space-y-4">
           <div className="flex items-center justify-center rounded-full bg-secondary p-4 text-secondary-foreground">

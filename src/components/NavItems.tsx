@@ -10,6 +10,12 @@ const NavItems = () => {
     <div className="flex gap-4 h-full">
       <div className="ml-4 items-center justify-center m-3 flex gap-6">
         <Link
+          href="/tutorials"
+          className={cn(buttonVariants({variant :"ghost"}), "px-8")}
+        >
+          Tutorials
+        </Link>
+        <Link
           href="https://coinmarketcap.com/"
           target="_blank"
           className={cn(buttonVariants({ variant: "ghost" }), "px-8")}
@@ -21,12 +27,6 @@ const NavItems = () => {
           className={cn(buttonVariants({variant :"ghost"}), "px-8")}
         >
           Transaction
-        </Link>
-        <Link
-          href="/tutorials"
-          className={cn(buttonVariants({variant :"ghost"}), "px-8")}
-        >
-          Tutorials
         </Link>
       </div>
     </div>
