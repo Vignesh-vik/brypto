@@ -1,3 +1,6 @@
+import pic from "../../../public/unnamed.jpg"
+
+
 export default function Component() {
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">
@@ -14,7 +17,7 @@ export default function Component() {
           <div className="bg-card p-6 rounded-lg shadow-md">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/placeholder.svg"
+                src={pic.src}
                 width={120}
                 height={120}
                 alt="Vignesh"
@@ -46,7 +49,7 @@ export default function Component() {
           <div className="bg-card p-6 rounded-lg shadow-md">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/placeholder.svg"
+                src={pic.src}
                 width={120}
                 height={120}
                 alt="Vicram Sundar"
@@ -77,7 +80,7 @@ export default function Component() {
           <div className="bg-card p-6 rounded-lg shadow-md">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/placeholder.svg"
+                src={pic.src}
                 width={120}
                 height={120}
                 alt="Mythili"
@@ -106,7 +109,7 @@ export default function Component() {
           <div className="bg-card p-6 rounded-lg shadow-md">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/placeholder.svg"
+                src={pic.src}
                 width={120}
                 height={120}
                 alt="Varsha"
@@ -132,7 +135,7 @@ export default function Component() {
           <div className="bg-card p-6 rounded-lg shadow-md">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/placeholder.svg"
+                src={pic.src}
                 width={120}
                 height={120}
                 alt="Thaniya"
